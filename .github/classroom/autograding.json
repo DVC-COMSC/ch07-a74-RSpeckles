@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "T1",
+      "setup": "",
+      "run": "python main.py",
+      "input": "20",
+      "output": "[\\w,\\W]*5[\\w,\\W]*30[\\w,\\W]*30[\\w,\\W]*50[\\w,\\W]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "T2",
+      "setup": "",
+      "run": "python main.py",
+      "input": "30",
+      "output": "[\\w,\\W]*5[\\w,\\W]*20[\\w,\\W]*50[\\w,\\W]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "T3",
+      "setup": "",
+      "run": "python main.py",
+      "input": "60",
+      "output": "[]",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
